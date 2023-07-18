@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", sans-serif;
+}
+
+p,
+h1,
+h2 {
+  color: #0f2336;
+}
+/* у моего ноута ширина экрана 1440px, поэтому я подстраивала весь сайт под такие размеры */
+
+body {
+  background-color: #b7cefd;
+}
+/* начало хэдера */
+header {
+  height: 985px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/header.svg") no-repeat;
+}
+.head_up {
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+.head_down {
+  width: 100%;
+  height: 897px;
+}
+nav {
+  width: 100%;
+  background-color: #faf182;
+}
+.nav_left {
+  width: 70%;
+  padding-left: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_left a {
+  text-decoration: none;
+  color: #e04cad;
+  cursor: pointer;
+}
+.nav_left a:hover {
+  color: red;
+}
+.nav_img {
+  margin-left: 100px;
+}
+.intro h2 {
+  font-size: 15px;
+}
+.intro button {
+  margin-top: 10px;
+  width: 230px;
+  height: 25px;
+  background-color: #e04cad;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+  cursor: pointer;
+}
+.intro button:hover {
+  color: #4b1939;
+}
+.intro button a {
+  text-decoration: none;
+  color: white;
+}
+.intro {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 542px;
+  height: 205px;
+  margin-top: 400px;
+  margin-left: 440px;
+  background-color: #faf182;
+  border-radius: 30px;
+  box-shadow: 30px #000000;
+  text-align: center;
+  box-shadow: 10px 5px 5px black;
+}
+.head_down h1 {
+  width: 930px;
+  margin: 50px auto;
+  font-size: 50px;
+  color: #e04cad;
+  box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+  background-color: ghostwhite;
+  border-radius: 15px;
+}
+/* конец хэдера */
+
+/* начало history */
+.history {
+  display: flex;
+}
+.history img {
+  margin-right: 80px;
+}
+/* конец history*/
+
+/* начало карточек */
+.card {
+  margin-bottom: 50px;
+}
+.cards_main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-left: 500px;
+  width: 1224px;
+  height: auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 396px;
+  height: 500px;
+  background-color: #b7cefd;
+  border-radius: 20px;
+}
+.card:hover {
+  animation: uu 2s infinite;
+}
+@keyframes uu {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+}
+
+.photo {
+  width: 396px;
+  height: 282px;
+}
+
+.photo:hover {
+  width: 406px;
+  height: auto;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+}
+#images {
+  display: flex;
+  width: 394px;
+  height: 262px;
+  border-radius: 15%;
+}
+.card p {
+  display: flex;
+  color: #000000;
+  font-size: 32px;
+  margin: 5px 0 0 0;
+  width: 167px;
+  height: 75px;
+  text-align: center;
+}
+
+.card p:first-child {
+  width: 40px;
+}
+
+.card p:last-child {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 394px;
+  height: 100px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+/* конец карточек */
+
+/* начало скиллы */
+.container__skills {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  line-height: 40px;
+  color: white;
+}
+
+.skils__1 {
+  margin: 0;
+  width: 40%;
+  background-color: #e04cad;
+}
+
+.skils__2 {
+  margin: 0;
+  width: 100%;
+  background-color: #e04cad;
+}
+
+.skils__3 {
+  margin: 0;
+  width: 90%;
+  background-color: #e04cad;
+}
+
+.skils__4 {
+  margin: 0;
+  width: 70%;
+  background-color: #e04cad;
+}
+
+.skils__5 {
+  margin: 0;
+  width: 80%;
+  background-color: #e04cad;
+}
+
+.skils p {
+  font-size: 20px;
+}
+
+.skils__1_2 {
+  margin: 0;
+  width: 90%;
+  background-color: #b1e3c3;
+}
+
+.skils__2_2 {
+  margin: 0;
+  width: 100%;
+  background-color: #b1e3c3;
+}
+
+.skils__3_2 {
+  margin: 0;
+  width: 40%;
+  background-color: #b1e3c3;
+}
+
+.skils__4_2 {
+  margin: 0;
+  width: 30%;
+  background-color: #b1e3c3;
+}
+
+.skils__5_2 {
+  margin: 0;
+  width: 30%;
+  background-color: #b1e3c3;
+}
+
+.skils__1_3 {
+  margin: 0;
+  width: 20%;
+  background-color: #205fdf;
+}
+
+.skils__2_3 {
+  margin: 0;
+  width: 100%;
+  background-color: #205fdf;
+}
+
+.skils__3_3 {
+  margin: 0;
+  width: 40%;
+  background-color: #205fdf;
+}
+
+.skils__4_3 {
+  margin: 0;
+  width: 60%;
+  background-color: #205fdf;
+}
+
+.skils__5_3 {
+  margin: 0;
+  width: 10%;
+  background-color: #205fdf;
+}
+/* конец скиллы */
+
+/* начало хобби */
+.hobby > p {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+
+.hobby {
+  margin-bottom: 131px;
+}
+.hobby p:first-child {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.girl {
+  margin-right: 10px;
+  box-shadow: 10px 5px 5px #e04cad;
+}
+.girl:hover {
+  animation: uu 2s infinite;
+}
+@keyframes uu {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+}
+.container_hobby {
+  width: 100%;
+  height: 306px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.container_hobby div {
+  width: 394px;
+  height: 306px;
+  border-radius: 15px;
+  background: #ffffff;
+  padding: 60px 22px 50px 30px;
+}
+
+.container_hobby p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%;
+  max-width: 313px;
+}
+.container_hobby p:first-child {
+  font-size: 16px;
+}
+/* конец хобби */
+
+/* начало футера */
+footer {
+  width: 1440px;
+  background-color: #faf182;
+}
+/* конец футера */
+/* начало sidebar */
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 60%;
+  margin-left: 300px;
+}
+.sidebar2 {
+  width: 70%;
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar_path1 {
+  background-color: #e04cad;
+  width: 30%;
+}
+.sidebar_path2 {
+  background-color: #205fdf;
+  width: 30%;
+}
+.sidebar_path3 {
+  background-color: #4ce182;
+  width: 30%;
+}
+#g1 {
+  animation: pulsing 7s infinite;
+}
+#g2 {
+  animation: pulsing 7s infinite;
+}
+#g3 {
+  animation: pulsing 7s infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 573px);
+  }
+  40% {
+    transform: translate(0px, 1146px);
+  }
+  50% {
+    transform: translate(0px, 1720px);
+  }
+  75% {
+    transform: translate(0px, 1146px);
+  }
+  85% {
+    transform: translate(0px, 573px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/* конец sidebar  */
+
+/* начало адаптивки */
+@media all and (max-width: 1271px) {
+  .container {
+    margin-left: 330px;
+  }
+  .skills2 {
+    width: 1322px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .history p {
+    width: 400px;
+  }
+  .container {
+    margin-left: 350px;
+  }
+}
+@media all and (max-width: 950px) {
+  .intro {
+    width: 842px;
+    height: 205px;
+    margin-left: 300px;
+    padding-top: 10px;
+  }
+  .intro h2 {
+    font-size: 19px;
+  }
+  .container {
+    margin-left: 300px;
+  }
+  .container p {
+    font-size: 19px;
+  }
+}
+@media all and (max-width: 835px) {
+  .container {
+    margin-left: 300px;
+  }
+  .skills2 {
+    width: 1322px;
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    margin-left: 320px;
+  }
+}
+@media all and (max-width: 540px) {
+  .container {
+    width: 100%;
+    margin-left: 300px;
+  }
+  .skills2 {
+    width: 900px;
+  }
+}
+@media all and (max-width: 360px) {
+  .skills2 {
+    width: 800px;
+  }
+}
+@media all and (max-width: 320px) {
+  .skills2 {
+    width: 700px;
+  }
+}
+/* конец адаптивки */
